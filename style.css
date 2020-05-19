@@ -28,7 +28,7 @@ h1 {
   line-height: 1;
   font-weight: 800;
   letter-spacing: 4px;
-  text-shadow: -3px 3px 0px rgb(238, 93, 229);
+  text-shadow: -3px 3px 0px #ee5de5;
 }
 
 h4 {
@@ -95,26 +95,33 @@ select {
 }
 
 select {
-  color: #ff6f47;
+  color: #dc47ff;
   width: 10rem;
   cursor: pointer;
   padding: 1rem;
   font-size: 1.5rem;
+  border-radius: 10px;
 }
 
+option {
+  margin: 10px 0;
+}
 .select::after {
   content: "\25BC";
   position: absolute;
-  background: #ff6f47;
+  background: #dc47ff;
+  font-size: 1.5rem;
   top: 0;
   right: 0;
   padding: 1rem;
   pointer-events: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   transition: 0.3s ease all;
 }
 .select:hover::after {
   background: white;
-  color: #ff6f47;
+  color: #dc47ff;
 }
 
 .todo-container {
@@ -136,6 +143,8 @@ select {
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgb(125, 125, 125);
   align-items:center;
   transition: all 0.5s ease;
 }
@@ -159,6 +168,8 @@ select {
 
 .trash-btn {
   background: #ff6f47;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .todo-item {
